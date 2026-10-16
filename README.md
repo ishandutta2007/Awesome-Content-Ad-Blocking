@@ -1,223 +1,114 @@
-# Awesome-Content-Ad-Blocking
+# Awesome Content & Ad Blocking: DNS Sinkholes, Privacy Resolvers & Browser Extensions
 
-## Top Content & Ad Blocking Ecosystem
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Tracked Projects](https://img.shields.io/badge/Tracked%20Projects-25%2B-brightgreen.svg)](#table-of-contents)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-October%202026-blue.svg)](#)
 
+> A curated list of leading Content & Ad Blocking SaaS platforms, DNS sinkholes, privacy resolvers, and open-source ad blockers.
 
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on DNS Sinkholing, Browser Extension Filtering & Network-Wide Privacy*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Content & Ad Blocking**. These tools enable individuals and organizations to block ads, trackers, malware domains, and unwanted content—from browser extensions that filter requests at the page level to network-wide DNS sinkholes that protect every device on your network without per-device configuration.
-
-
-
-**Examples** include AdGuard Premium, NextDNS, Pi-hole, Control D, Brave Shields, Ghostery, 1Blocker, AdLock, CleanBrowsing, and uBlock Origin (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, DNS-level blocking, and open filtering engines—ideal for privacy-conscious users, homelab enthusiasts, and organizations seeking transparent, vendor-independent content filtering.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[AdGuard Premium](https://adguard.com/en/adguard-adblocker/overview.html)**  
-
-  **The best full-system ad blocker**—**blocks ads in all applications, not just browsers** . AdGuard Desktop (macOS/Windows) intercepts ad requests at the network level before they reach any application—streaming apps, social media apps, and games included. **AdGuard Home** is the free, self-hosted DNS-level alternative for network-wide blocking . **The most comprehensive commercial option** for users who want ad-free experiences everywhere, not just in the browser.
-
-
-
-- **[NextDNS](https://nextdns.io/)**  
-
-  **Cloud-based DNS filtering** with ad blocking, tracker blocking, and parental controls. Features **per-device configuration**, **encrypted DNS (DoH/DoT)**, and **detailed analytics**. **The most flexible managed DNS filtering service**—works on any device that supports custom DNS.
-
-
-
-- **[Control D](https://controld.com/)**  
-
-  **Privacy-first DNS filtering** with ad blocking, malware protection, and custom rules. Features **encrypted DNS**, **per-profile configuration**, and **geographic content unblocking**.
-
-
-
-- **[Brave Shields](https://brave.com/shields/)**  
-
-  **Built-in ad and tracker blocking** in the Brave browser. Features **fingerprinting protection**, **HTTPS upgrades**, and **private search**. **The most seamless integrated blocking**—no extension required.
-
-
-
-- **[Ghostery](https://www.ghostery.com/)**  
-
-  **Privacy-focused tracker blocker** with ad blocking, cookie management, and **Ghostery Private Browser**. Features **transparent tracker detection** and **custom blocking rules**.
-
-
-
-- **[CleanBrowsing](https://cleanbrowsing.org/)**  
-
-  **DNS filtering service** for families and organizations. Features **content filtering**, **malware protection**, and **encrypted DNS**. **The most focused on parental controls** and content policy enforcement.
-
-
-
-- **[1Blocker](https://1blocker.com/)**  
-
-  **Powerful Safari content blocker** for iOS and macOS. Features **custom rules**, **element hiding**, and **script blocking**. **The best Safari-native option** for Apple users.
-
-
-
-- **[AdLock](https://adlock.com/)**  
-
-  **Cross-platform ad blocker** with browser extension and system-wide filtering. Features **YouTube ad blocking**, **anti-adblock circumvention**, and **battery-saving mode**.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[uBlock Origin](https://github.com/gorhill/uBlock)**  
-
-  **High-efficiency, open-source content and ad blocker** (GPL-3.0) . **The gold standard for browser ad blocking**—created by Raymond Hill (gorhill) and widely regarded as one of the most trustworthy and effective ad-blocking extensions available . **65,524 GitHub stars** . **Key advantages**: **completely free with no "acceptable ads" program**—blocks all ads, not just non-paying advertisers' . **Uses 80-90% less memory than AdBlock Plus** while blocking more requests . **Critical 2026 consideration**: **Full functionality is only available in Firefox**—Google's Manifest V3 transition limits content blockers in Chrome, forcing the creation of **uBlock Origin Lite** with reduced capabilities . **Mozilla has committed to supporting Manifest V2 in Firefox**, making **Firefox + uBlock Origin the strongest combination for comprehensive tracker blocking** . **The reference implementation for browser content blocking**.
-
-
-
-- **[Pi-hole](https://github.com/pi-hole/pi-hole)**  
-
-  **A black hole for Internet advertisements** (EUPL-1.2) . **The original network-wide DNS ad blocker**—**50,000+ GitHub stars** and the largest community in self-hosted DNS filtering . **Network-wide blocking for every device on your network**—smart TVs, game consoles, smart home devices—without per-device configuration . **Features**: **detailed query log dashboard**, **group-based filtering per client**, **long-term query retention (years)**, **local DNS records**, and **DHCP server** . **Limitations**: **no built-in encrypted DNS (DoH/DoT)**—requires **Unbound** or **cloudflared** sidecar for encrypted upstream queries . **Higher resource usage (~120-180 MB RAM, ~300 MB Docker image)** . **The reference implementation for DNS sinkholing**.
-
-
-
-- **[AdGuard Home](https://github.com/AdguardTeam/AdGuardHome)**  
-
-  **Network-wide software for blocking ads and tracking** (GPL-3.0) . **The modern all-in-one DNS ad blocker**—**the most complete self-hosted solution** . **Native DoH/DoT/DoQ/DNSCrypt**—no sidecar services required . **Features**: **clean modern web UI**, **per-client filtering rules**, **DHCP server**, **parental controls + Safe Search enforcement**, **DNS rewrites for local network**, and **low resource usage (~60-80 MB RAM)** . **Single container deployment** . **Limitations**: **no built-in Prometheus metrics** (uses custom stats API), **no native multi-instance sync**, and **smaller community than Pi-hole** . **Best for**: most users—the best balance of features, simplicity, and resource usage .
-
-
-
-- **[Blocky](https://github.com/0xERR0R/blocky)**  
-
-  **Fast and lightweight DNS proxy as ad-blocker for local network** (Apache-2.0) . **The best lightweight / config-as-code DNS ad blocker**—**5,509 GitHub stars** . **~10-30 MB RAM and 15 MB Docker image**—the lightest option available . **YAML configuration**—version-control friendly, reproducible, **infrastructure-as-code practitioners' choice** . **Native DoH/DoT**—no add-ons required . **Built-in DNSSEC validation**, **Prometheus metrics**, **multi-instance sync via Redis**, and **per-client filtering in config** . **Runs from scratch image (minimal attack surface)** . **Limitations**: **no web UI (API only)**, **no DHCP server**, and **smaller community** . **Best for**: infrastructure-as-code users, resource-constrained hardware, and users who don't need a web dashboard .
-
-
-
-- **[Technitium DNS Server](https://github.com/TechnitiumSoftware/DnsServer)**  
-
-  **The DNS server that replaces Pi-hole, Unbound, and BIND** (GPL-3.0) . **The most comprehensive open-source DNS server**—**recursive resolver, sinkhole with blocklists, and authoritative zone server all in one process** . **Features**: **DoH/DoT/DoQ support**, **full DNSSEC (RSA, ECDSA, EdDSA, NSEC/NSEC3, DANE TLSA)**, **AXFR/IXFR zone transfers**, **Tor routing for forwarders**, **multi-network DHCP**, **clustering**, **SSO via OpenID Connect**, **TOTP 2FA**, and **built-in apps for DNS64, DNS Rebinding Protection, and Advanced Forwarding** . **Performance**: **100,000+ requests/second on Gigabit Ethernet**; **~200-300 MB RAM under load with Hagezi Pro (750,000 entries)** on Raspberry Pi 4 . **Web console** with Quick Add for popular blocklists (Hagezi) and **per-client/subnet blocking rules** . **Limitations**: **Windows 10/11 port 53 conflicts** (Internet Connection Sharing, Hyper-V, Docker Desktop, Defender Application Guard all fight for the port) . **Best for**: users who want DNS sinkholing, recursive resolution, and zone hosting in one tool .
-
-
-
-- **[zdns](https://github.com/mpolden/zdns)**  
-
-  **Privacy-focused DNS resolver and DNS sinkhole** (MIT) . **The minimal, portable DNS sinkhole**—**controls filtering at DNS level, similar to Pi-hole** . **Features**: **parallel resolving over multiple resolvers**, **efficient filtering and caching**, **DNS over TLS or DNS over HTTPS for upstream resolvers**, **zero run-time dependencies**, **DNS logging**, and **metrics** . **Runs on all platforms supported by Go**—VPS, container, laptop, Raspberry Pi, or home router . **REST API** for log and cache access . **Limitations**: **exact-domain matching only** (no regex support in current version), **SQLite-based logging** . **Best for**: users who want a simple, portable DNS sinkhole without Pi-hole's dependencies and feature scope .
-
-
-
-- **[refunnel-rs](https://github.com/DavidMANZI-093/refunnel-rs)**  
-
-  **A fast, lightweight DNS sinkhole written in Rust** (open-source) . **The Rust-native DNS sinkhole**—**blocks ads, trackers, and malware at the DNS layer** . **Features**: **DNS sinkhole returning `0.0.0.0`/`::` for blocked domains**, **StevenBlack-compatible blocklist (120,000+ domains out of the box)**, **LRU response cache (10,000 entries)**, **Cloudflare upstream (1.1.1.1:53)**, and **structured logging** . **Async core built on Tokio**—handles concurrent queries without blocking . **systemd service** with dedicated unprivileged user and minimal capabilities . **Limitations**: **exact-domain matching only**, **blocklist loaded once at startup (requires restart to update)**, **no web UI** . **Best for**: Rust users who want a minimal DNS sinkhole with fast lookups.
-
-
-
-- **[sagittarius](https://github.com/LHelge/sagittarius)**  
-
-  **A self-hosted DNS sinkhole (like Pi-hole / AdGuard Home), written in Rust and shipped as a single self-contained binary** (open-source) . **The modern Rust DNS sinkhole with web UI**—**DNS engine, storage, and web admin UI all included** . **Features**: **subscribable blocklists (hosts/domain-list formats)**, **manual allow/deny lists**, **per-list effectiveness tracking**, **pause blocking (5 min / 30 min / 1h / custom)**, **live query log and dashboard streamed over SSE**, **persistent query log (configurable retention, default 30 days)**, **encrypted upstreams (DoH/DoT) with selectable strategy**, **local DNS records with wildcards**, **reverse DNS for LAN**, and **conditional forwarding for private reverse zones** . **Architecture**: **Tokio async runtime**, **Tower middleware (rate limiting, backpressure)**, **custom DNS wire format parser**, **SQLite via sqlx**, **HashSet blacklist + HashMap blocklist with arc-swap hot-swapping**, **moka cache with TTL** . **Single binary install via systemd script** . **Best for**: users who want a Rust-native DNS sinkhole with a modern web UI and persistent query history.
-
-
-
-- **[donutdns](https://github.com/shoenig/donutdns)**  
-
-  **Block ads, trackers, and malicious sites with donutdns - simple alternative to pihole** (open-source) . **86 GitHub stars** . **Runs as a Docker container, standalone executable, or CoreDNS plugin** . **Supplies custom domain block/allow lists in addition to builtin lists** maintained by the ad-blocking community . **Best for**: users who want a simple, flexible DNS sinkhole that integrates with existing CoreDNS infrastructure.
-
-
-
-- **[ha-sinkhole](https://github.com/radiusred/ha-sinkhole)**  
-
-  **Local DNS sinkhole server, inspired by pi-hole but designed to be highly available** (open-source) . **The high-availability DNS sinkhole**—**uses VRRP to share a floating VIP among multiple nodes** . **Configuration: all DNS clients point to the VIP, and as long as at least one node is alive, DNS and sinkhole service remains operational** . **Minimum two machines for HA, more can be added for additional resilience** . **Works on Raspberry Pi, bare metal servers, local VMs, cloud instances, or a mixture** . **Ansible-based remote installer** with flexible node layout definition . **Limitations**: **container deployment unlikely to succeed**, **requires passwordless SSH and passwordless sudo on target nodes** . **Best for**: homelabs and small organizations that need DNS filtering to survive node failures.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **[Cloudflare Gateway Pi-hole Scripts (CGPS)](https://github.com/mrrfv/cloudflare-gateway-pihole-scripts)** — Use Cloudflare Gateway DNS/VPN to block ads, malware and tracking domains—free alternative to NextDNS, Pi-hole and AdGuard . **No servers to maintain, no Raspberry Pi to buy**—scripts create Cloudflare Gateway lists and rules from blocklist files . **Supports hosts files and domain lists**, **allowlist support**, **experimental SNI-based filtering**, and **GitHub Actions for automatic updates** . **Free plan supports up to 300,000 domains** . **Best for**: users who want Pi-hole-like filtering without running any infrastructure.
-
-- **[AdGuard Filters](https://github.com/AdguardTeam/AdguardFilters)** — Curated adblock filter lists, content blocking rulesets, and DNS blocklists (GPL-3.0) . **The filter lists powering AdGuard products**—including specialized rules for cosmetic filtering, malware domains, and regional blocking .
-
-- **[Jev Ad Block](https://github.com/lingengyuan/jev-adblock)** — Chrome MV3 ad blocker using Jev (TypeSafe System One) for semantic element judgment (GPL-3.0) . **The AI-powered ad blocker**—network rules block ad requests, content scripts hand candidate elements to Jev for semantic judgment, with local-rule fallback when API key is unavailable . **Community rules from EasyList China + CJX's Annoyance List** . **Best for**: users who want semantic ad detection beyond static filter lists.
-
-- Community **n8n** workflows for DNS query monitoring and blocklist update automation.
-
-
-
-**Frameworks for building custom systems**: Combine **AdGuard Home** for the most complete self-hosted DNS blocking experience with **Blocky** for config-as-code infrastructure, **Technitium** for recursive resolution and zone hosting, **uBlock Origin** for browser-level filtering, and **Pi-hole** for the largest community and integration ecosystem—creating a comprehensive content and ad blocking stack.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Content and ad blocking tools must respect website terms of service and applicable regulations. **Some jurisdictions are considering criminalizing browser-side blockers** . **Use responsibly and in compliance with local laws.**
-
-- **Open-source ad blocking is mature and production-ready.** uBlock Origin is the gold standard for browser blocking with 29M+ Chrome users and 10M+ Firefox users . AdGuard Home is the most complete self-hosted DNS blocker . Pi-hole has the largest community and most integrations . **These are genuine alternatives to commercial platforms.**
-
-- **The Manifest V3 transition is the critical 2026 consideration.** **Full uBlock Origin functionality is only available in Firefox**—Chrome's Manifest V3 replaces dynamic blocking APIs with a static declarative rule system that cannot match uBlock Origin's engine flexibility . **Mozilla has committed to supporting Manifest V2 in Firefox**, making **Firefox + uBlock Origin the strongest combination for comprehensive tracker blocking** . **On Chrome and Edge, uBlock Origin Lite provides reduced but meaningful protection** .
-
-- **DNS-level vs. browser-level blocking serve different purposes.** **DNS sinkholes (Pi-hole, AdGuard Home, Blocky)** block requests before they leave your network—**protects every device including smart TVs, game consoles, and IoT devices** that cannot run extensions . **Browser extensions (uBlock Origin)** provide cosmetic filtering, element hiding, and script control that DNS blocking cannot . **The best setup combines both.**
-
-- **The self-hosted DNS landscape has clear specializations.** **AdGuard Home** for the best all-in-one experience with native encrypted DNS . **Pi-hole** for the largest community and most integrations . **Blocky** for config-as-code infrastructure and minimal resource usage . **Technitium** for recursive resolution and zone hosting in addition to blocking . **Choose based on your operational model, not feature checklists**.
-
-- **Free cloud alternatives exist.** Cloudflare Gateway Pi-hole Scripts provide Pi-hole-like filtering with **no servers to maintain and no Raspberry Pi to buy**—the free plan supports up to 300,000 domains . **Best for**: users who want network-wide blocking without running any infrastructure.
-
-- Self-hosted open-source solutions require proper DNS configuration, blocklist curation, and ongoing maintenance. **Blocklist quality determines filtering effectiveness**—**StevenBlack/hosts** provides a curated base list (120,000+ domains) aggregated from multiple trusted sources . **Hagezi lists** are recommended for comprehensive coverage .
-
-
+**Focused on DNS Sinkholing, Manifest V3 / V2 Browser Filtering, Network-Wide Privacy, and Ad-Free Infrastructure.**
 
 ---
 
+## Overview
 
+This repository indexes the content and ad blocking landscape across commercial SaaS platforms, cloud resolvers, and community-driven open-source projects. These tools empower individuals, homelabs, and enterprises to block intrusive advertisements, stop telemetry trackers, prevent phishing/malware domains, and bypass aggressive anti-adblock mechanisms.
 
-**Made for privacy-conscious users, homelab enthusiasts, and organizations building transparent content filtering solutions.**  
+Whether you are configuring network-wide protection via DNS sinkholes (Pi-hole, AdGuard Home) or page-level cosmetic filtering via browser extensions (uBlock Origin), this guide tracks key architectural trade-offs, pricing models, company valuations, and repository adoption metrics.
 
-Let's make Content & Ad Blocking more open, data-driven, and network-wide.
+---
+
+## Table of Contents
+
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS & Hosted Ad Blocking Platforms](#saas--hosted-ad-blocking-platforms)
+- [Open-Source GitHub Projects](#open-source-github-projects)
+- [Architectural Comparison: DNS Sinkholing vs. Browser Extension Filtering](#architectural-comparison-dns-sinkholing-vs-browser-extension-filtering)
+- [How to Contribute](#how-to-contribute)
+- [Disclaimer & Regulatory Notes](#disclaimer--regulatory-notes)
+
+---
+
+## Sector Overview & Market Dynamics
+
+The global ad blocking software market is estimated at **$3.5B – $4.3B** (projected to reach **$7.5B – $11.5B** by the early 2030s at a **CAGR of ~11.5%**), driven by increasing user privacy regulations (GDPR, CCPA), surging mobile and smart TV ad density, and browser-engine shifts such as Chromium's Manifest V3. The sector remains **highly fragmented** across direct-to-consumer mobile utilities, cloud encrypted DNS resolvers (DoH/DoT/DoQ), corporate network firewalls, and deeply entrenched open-source filter engines, where no single vendor holds a monopoly or "winner-take-all" advantage due to strong user commitment to open community filter rulesets (e.g., EasyList, StevenBlack, Hagezi).
+
+---
+
+## SaaS & Hosted Ad Blocking Platforms
+
+Below is a comparison of commercial and hosted ad-blocking, privacy DNS, and system-wide content filtering solutions. Companies are sorted in descending order by **Company Scale (Valuation / Revenue)**.
+
+| SaaS / Product Name | Starting Tier Price | Free Tier / Trial Limits | Company Scale (Valuation / Revenue) | Core Features & Deployment |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Ghostery](https://www.ghostery.com/)** | **$1.99 / month** (Optional Contributor tier; core extension is 100% free) | **Free forever plan**: Unlimited tracker & ad blocking, cookie consent auto-rejection, and open-source browser on all devices | **€2.66 Billion (~$2.9B) Revenue** (Parent: Hubert Burda Media) | Tracker intelligence, anti-tracking script blocking, cookie pop-up elimination, and privacy-first browser engine. |
+| **[Brave Shields](https://brave.com/shields/)** | **$9.99 / month** (Brave Firewall + VPN; built-in Shields engine is 100% free) | **Free forever plan**: Built directly into Brave browser with unlimited cosmetic ad, tracker, and fingerprinting blocking across desktop & mobile | **$980 Million Valuation** (~$52M–$100M ARR; 100M+ MAU) | Integrated native Rust/C++ network request blocking, fingerprint randomization, bounce tracking mitigation, and Brave Search privacy. |
+| **[AdGuard Premium](https://adguard.com/en/adguard-adblocker/overview.html)** | **$2.49 / month** (AdGuard DNS Personal) or **$2.49 / month** ($29.88/yr Personal App License) | **14-day full free trial** for standalone desktop/mobile apps; **Free forever tier for AdGuard DNS** capped at **300,000 queries/month** (2 devices, 1 server) | **~$5.4 Million Annual Revenue** (Profitable, bootstrapped; 150M+ users) | Full-system network socket filtering (intercepts in-app, game, and streaming ads), cosmetic DOM hiding, and cloud DoH/DoT/DoQ profiles. |
+| **[1Blocker](https://1blocker.com/)** | **$2.99 / month** or **$14.99 / year** ($39.99 Lifetime) | **Free forever plan**: Allows activating any 1 functional rule category at a time (e.g., Block Ads only or Block Trackers only) across iOS and macOS | **~$2.0 Million Estimated Revenue** (Independent consumer app leader) | Native Apple Safari Content Blocking API integration, local processing with zero battery drain, custom rule generation, and iCloud sync. |
+| **[Control D](https://controld.com/)** | **$3.00 / month** ($30/year "Some Control" plan) | **14-day full free trial** (no credit card required); **Free forever tier**: Unlimited DNS queries using pre-configured public DNS IP profiles (no custom web dashboard) | **~$1.0 Million Estimated ARR** (Spin-off from Windscribe VPN) | Modern encrypted DNS (DoH/DoT/Do3), 15+ native filter lists, granular scheduling, per-device service blocking, and optional geo-proxy IP routing. |
+| **[NextDNS](https://nextdns.io/)** | **$1.99 / month** or **$19.90 / year** (Pro plan) | **Free forever plan**: **300,000 DNS queries/month** with unlimited devices and full configuration; seamlessly falls back to non-blocking DNS after limit | **Bootstrapped** (Est. sub-$1M ARR; 1M+ active endpoints) | Cloud-hosted customizable DNS sinkhole, per-client analytics, parental control categories, safe search enforcement, and DoH/DoT/DoQ support. |
+| **[CleanBrowsing](https://cleanbrowsing.org/)** | **$4.99 / month** (billed $59.99/year Basic Plan) | **Free forever plan**: 3 pre-configured public Anycast DNS resolver pairs (Security, Adult, and Family Filter) with unlimited DNS queries | **~$330,000 Estimated ARR** (Specialized family & education cybersecurity) | Family safety and institutional DNS filtering, automated adult domain sinkholing, phishing defense, and enforced Google/Bing SafeSearch. |
+| **[AdLock](https://adlock.com/)** | **$1.05 / month** (multi-year billing) or **$3.50 / month** ($24.99 Lifetime deals) | **14-day free trial** for Windows/Android apps (full functionality, 1 device); **Free forever plan** for standard browser extension | **Independent / Bootstrapped** (Micro-ISV) | System-wide daemon blocking ads inside games, Skype, and apps; anti-adblock circumvention scripts; and HTTPS traffic scanning. |
+
+---
+
+## Open-Source GitHub Projects
+
+Curated open-source DNS sinkholes, filtering proxies, and browser extensions. Repositories are sorted in descending order by **GitHub Star Counts** with linked star badges.
+
+| Repository | Stars | License | Primary Role & Description |
+| :--- | :--- | :--- | :--- |
+| **[uBlock Origin](https://github.com/gorhill/uBlock)** | [![GitHub stars](https://img.shields.io/github/stars/gorhill/uBlock?style=social&color=white)](https://github.com/gorhill/uBlock/stargazers) | `GPL-3.0` | **Gold-standard browser extension content blocker**. Created by Raymond Hill (`gorhill`). Memory-efficient CPU/RAM footprint with deep procedural DOM cosmetic filtering, dynamic script injection blocking, and zero commercial "Acceptable Ads" compromises. |
+| **[Pi-hole](https://github.com/pi-hole/pi-hole)** | [![GitHub stars](https://img.shields.io/github/stars/pi-hole/pi-hole?style=social&color=white)](https://github.com/pi-hole/pi-hole/stargazers) | `EUPL-1.2` | **The foundational network-wide DNS sinkhole**. Intercepts DNS queries for all local network devices (Smart TVs, IoT, mobile) with detailed web dashboard analytics, FTLDNS engine, group filtering, DHCP server, and massive homelab community support. |
+| **[AdGuard Home](https://github.com/AdguardTeam/AdGuardHome)** | [![GitHub stars](https://img.shields.io/github/stars/AdguardTeam/AdGuardHome?style=social&color=white)](https://github.com/AdguardTeam/AdGuardHome/stargazers) | `GPL-3.0` | **Modern all-in-one network DNS sinkhole & DoH/DoT server**. Shipped as a self-contained Go binary with native upstream encryption (DoH, DoT, DoQ, DNSCrypt), parental control toggles, DNS rewrites, and per-client rule assignments. |
+| **[StevenBlack/hosts](https://github.com/StevenBlack/hosts)** | [![GitHub stars](https://img.shields.io/github/stars/StevenBlack/hosts?style=social&color=white)](https://github.com/StevenBlack/hosts/stargazers) | `MIT` | **Consolidated hosts file for DNS and system-level blocking**. Aggregates, de-duplicates, and validates 120,000+ domain entries across reputable community blocklists with optional extension categories (porn, social, gambling, fake news). |
+| **[Hagezi DNS Blocklists](https://github.com/hagezi/dns-blocklists)** | [![GitHub stars](https://img.shields.io/github/stars/hagezi/dns-blocklists?style=social&color=white)](https://github.com/hagezi/dns-blocklists/stargazers) | `GPL-3.0` | **Comprehensive multi-tiered DNS filter lists**. Curated to minimize false positives across Light, Multi Normal, Multi Pro, and Ultimate tiers; compatible with Pi-hole, AdGuard Home, Technitium, NextDNS, and Unbound. |
+| **[Technitium DNS Server](https://github.com/TechnitiumSoftware/DnsServer)** | [![GitHub stars](https://img.shields.io/github/stars/TechnitiumSoftware/DnsServer?style=social&color=white)](https://github.com/TechnitiumSoftware/DnsServer/stargazers) | `GPL-3.0` | **Enterprise-grade authoritative & recursive DNS resolver with sinkhole engine**. Built in C# .NET with native DNSSEC, DoH/DoT/DoQ forwarders, multi-network DHCP, clustering, and high-throughput query handling (100k+ QPS). |
+| **[Blocky](https://github.com/0xERR0R/blocky)** | [![GitHub stars](https://img.shields.io/github/stars/0xERR0R/blocky?style=social&color=white)](https://github.com/0xERR0R/blocky/stargazers) | `Apache-2.0` | **Ultra-lightweight Go DNS proxy and ad blocker**. Tailored for GitOps and Infrastructure-as-Code workflows via clean YAML configuration, Prometheus metrics, Redis multi-instance sync, and ~15MB scratch Docker deployment. |
+| **[Bromite](https://github.com/bromite/bromite)** | [![GitHub stars](https://img.shields.io/github/stars/bromite/bromite?style=social&color=white)](https://github.com/bromite/bromite/stargazers) | `GPL-3.0` | **Customized Chromium browser with built-in ad blocking & privacy enhancements**. Hardened for Android with fine-grained tracking protection and fast content filtering engine patches. |
+| **[AdGuard Filters](https://github.com/AdguardTeam/AdguardFilters)** | [![GitHub stars](https://img.shields.io/github/stars/AdguardTeam/AdguardFilters?style=social&color=white)](https://github.com/AdguardTeam/AdguardFilters/stargazers) | `GPL-3.0` | **Comprehensive ad blocking and privacy rulesets**. Powers AdGuard apps, extensions, and DNS; contains specialized cosmetic rules, anti-annoyance filters, mobile-specific rules, and URL tracking parameter removers. |
+| **[AdGuard Browser Extension](https://github.com/AdguardTeam/AdguardBrowserExtension)** | [![GitHub stars](https://img.shields.io/github/stars/AdguardTeam/AdguardBrowserExtension?style=social&color=white)](https://github.com/AdguardTeam/AdguardBrowserExtension/stargazers) | `LGPL-3.0` | **Full-featured open-source browser extension**. Capable of handling sophisticated cosmetic rules, scriptlet injection, cookie notice removal, and filtering on Chromium, Firefox, and Safari. |
+| **[Brave Core](https://github.com/brave/brave-core)** | [![GitHub stars](https://img.shields.io/github/stars/brave/brave-core?style=social&color=white)](https://github.com/brave/brave-core/stargazers) | `MPL-2.0` | **Core engine for Brave Browser**. Integrates custom Rust network-filtering libraries (`ad-block`) that match EasyList/uBlock rules natively at the network stack before HTTP requests are dispatched. |
+| **[Cloudflare Gateway Pi-hole Scripts (CGPS)](https://github.com/mrrfv/cloudflare-gateway-pihole-scripts)** | [![GitHub stars](https://img.shields.io/github/stars/mrrfv/cloudflare-gateway-pihole-scripts?style=social&color=white)](https://github.com/mrrfv/cloudflare-gateway-pihole-scripts/stargazers) | `MIT` | **Serverless cloud ad blocker using Cloudflare Zero Trust Gateway**. Python automation scripts converting Pi-hole / hosts blocklists into Cloudflare Gateway firewall rules (protecting up to 300,000 domains on the free plan). |
+| **[uBlock Origin (Firefox Legacy)](https://github.com/gorhill/uBlock-for-firefox-legacy)** | [![GitHub stars](https://img.shields.io/github/stars/gorhill/uBlock-for-firefox-legacy?style=social&color=white)](https://github.com/gorhill/uBlock-for-firefox-legacy/stargazers) | `GPL-3.0` | **uBlock Origin for legacy XUL Firefox and forks** (Waterfox, Pale Moon, Basilisk). Maintained for classic browser engine architectures with raw webRequest access. |
+| **[donutdns](https://github.com/shoenig/donutdns)** | [![GitHub stars](https://img.shields.io/github/stars/shoenig/donutdns?style=social&color=white)](https://github.com/shoenig/donutdns/stargazers) | `Apache-2.0` | **Modular DNS sinkhole and CoreDNS plugin**. Runs as a standalone container or CoreDNS module; supports community domain lists, zero-configuration defaults, and lightweight memory consumption. |
+| **[zdns](https://github.com/mpolden/zdns)** | [![GitHub stars](https://img.shields.io/github/stars/mpolden/zdns?style=social&color=white)](https://github.com/mpolden/zdns/stargazers) | `MIT` | **Minimalist Go DNS sinkhole & caching resolver**. Features parallel upstream queries, DNS-over-TLS/HTTPS upstreams, zero external runtime dependencies, and lightweight SQLite query logging. |
+| **[refunnel-rs](https://github.com/DavidMANZI-093/refunnel-rs)** | [![GitHub stars](https://img.shields.io/github/stars/DavidMANZI-093/refunnel-rs?style=social&color=white)](https://github.com/DavidMANZI-093/refunnel-rs/stargazers) | `GPL-3.0` | **High-performance async DNS sinkhole in Rust**. Built on Tokio with StevenBlack hosts integration, memory LRU cache, and fast zero-latency `0.0.0.0` blocking before queries leave the network. |
+| **[sagittarius](https://github.com/LHelge/sagittarius)** | [![GitHub stars](https://img.shields.io/github/stars/LHelge/sagittarius?style=social&color=white)](https://github.com/LHelge/sagittarius/stargazers) | `GPL-3.0` | **Single-binary Rust DNS sinkhole with embedded Web UI**. Features live SSE query logs, customizable retention, hot-swapping blocklists with `arc-swap`, and encrypted DoH/DoT upstream forwarders. |
+| **[ha-sinkhole](https://github.com/radiusred/ha-sinkhole)** | [![GitHub stars](https://img.shields.io/github/stars/radiusred/ha-sinkhole?style=social&color=white)](https://github.com/radiusred/ha-sinkhole/stargazers) | `MIT` | **High-availability DNS sinkhole cluster**. Uses Keepalived and VRRP to share a floating Virtual IP (VIP) across multiple Pi-hole / DNS nodes, preventing single-point DNS network failure. |
+| **[Jev Ad Block](https://github.com/lingengyuan/jev-adblock)** | [![GitHub stars](https://img.shields.io/github/stars/lingengyuan/jev-adblock?style=social&color=white)](https://github.com/lingengyuan/jev-adblock/stargazers) | `GPL-3.0` | **Manifest V3 semantic AI ad blocker**. Combines static declarative network rules with AI semantic element analysis to recognize obfuscated advertisements that traditional regex filter lists miss. |
+
+---
+
+## Architectural Comparison: DNS Sinkholing vs. Browser Extension Filtering
+
+| Capability / Threat Vector | DNS Sinkhole (Pi-hole, AdGuard Home, NextDNS) | Browser Content Blocker (uBlock Origin, Brave) |
+| :--- | :--- | :--- |
+| **Scope of Protection** | **Entire Network & All Devices** (IoT, Smart TVs, Phones, Game Consoles) | **Browser Tab Only** (Single browser profile) |
+| **Setup Overhead** | Router DHCP / DNS configuration or local server deployment | 1-click browser extension install |
+| **Cosmetic Filtering & Blank Space Hiding** | ❌ Cannot alter HTML/CSS; leaves collapsed or blank ad spaces | ✅ Fully removes white space, sponsored banners, and DOM containers |
+| **First-Party & CNAME Cloaked Tracking** | ❌ Often cannot distinguish first-party subdomains from CDN assets | ✅ Inspects HTTP request context and removes third-party scriptlet execution |
+| **Streaming / In-App Video Ads (YouTube/Twitch)** | ❌ Fails when ads and content originate from the same CDN domain | ✅ Injects player scriptlets and intercepts streaming manifest payloads |
+| **Manifest V3 Resistance** | ✅ 100% immune to browser engine API changes | ⚠️ Chromium restricts dynamic declarativeNetRequest rules; Firefox maintains MV2 |
+
+> **Recommended Strategy**: Combine an upstream **DNS Sinkhole** (e.g. AdGuard Home or NextDNS) for baseline network-wide telemetry blocking with **uBlock Origin on Firefox** for in-depth cosmetic element hiding and anti-circumvention protection.
+
+---
+
+## How to Contribute
+
+We welcome additions and updates from developers, homelab maintainers, and privacy advocates:
+
+1. **Fork the repository** to your personal GitHub account.
+2. Ensure your proposed project or platform fits Content/Ad Blocking, DNS filtering, or Anti-Tracking.
+3. Follow the established markdown table format with accurate pricing, free tier limits, company revenue/valuation details, and linked GitHub star badges.
+4. Test markdown formatting and submit a clear Pull Request.
+
+---
+
+## Disclaimer & Regulatory Notes
+
+- This repository is a community-maintained index for privacy research and educational purposes.
+- Content blocking tools should be configured responsibly in compliance with local laws and target service agreements.
+- While commercial ad tech continues to adapt through server-side ad insertion (SSAI) and browser Manifest V3 constraints, open-source filter lists and independent resolvers remain resilient, transparent alternatives to data-harvesting networks.
