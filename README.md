@@ -1,42 +1,53 @@
-# Awesome Content & Ad Blocking: DNS Sinkholes, Privacy Resolvers & Browser Extensions
+<div align="center">
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Tracked Projects](https://img.shields.io/badge/Tracked%20Projects-25%2B-brightgreen.svg)](#table-of-contents)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-October%202026-blue.svg)](#)
+<img src="./assets/banner.svg" alt="Awesome Content &amp; Ad Blocking Banner" width="100%" />
 
-> A curated list of leading Content & Ad Blocking SaaS platforms, DNS sinkholes, privacy resolvers, and open-source ad blockers.
+# 🛡️ Awesome Content & Ad Blocking: DNS Sinkholes, Privacy Resolvers & Browser Extensions 🚫
 
-**Focused on DNS Sinkholing, Manifest V3 / V2 Browser Filtering, Network-Wide Privacy, and Ad-Free Infrastructure.**
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Awesome List"/></a>
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"/></a>
+<a href="#-table-of-contents"><img src="https://img.shields.io/badge/Tracked%20Projects-25%2B-brightgreen.svg" alt="Tracked Projects"/></a>
+<a href="#"><img src="https://img.shields.io/badge/Last%20Updated-October%202026-blue.svg" alt="Last Updated"/></a>
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
----
+<p align="center">
+  <strong>Curated ecosystem of SaaS platforms, DNS sinkholes, privacy resolvers, and open-source ad blockers.</strong><br>
+  <em>Focused on DNS Sinkholing, Manifest V3 / V2 Browser Filtering, Network-Wide Privacy, and Ad-Free Infrastructure.</em>
+</p>
 
-## Overview
-
-This repository indexes the content and ad blocking landscape across commercial SaaS platforms, cloud resolvers, and community-driven open-source projects. These tools empower individuals, homelabs, and enterprises to block intrusive advertisements, stop telemetry trackers, prevent phishing/malware domains, and bypass aggressive anti-adblock mechanisms.
-
-Whether you are configuring network-wide protection via DNS sinkholes (Pi-hole, AdGuard Home) or page-level cosmetic filtering via browser extensions (uBlock Origin), this guide tracks key architectural trade-offs, pricing models, company valuations, and repository adoption metrics.
-
----
-
-## Table of Contents
-
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS & Hosted Ad Blocking Platforms](#saas--hosted-ad-blocking-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [Architectural Comparison: DNS Sinkholing vs. Browser Extension Filtering](#architectural-comparison-dns-sinkholing-vs-browser-extension-filtering)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer & Regulatory Notes](#disclaimer--regulatory-notes)
+</div>
 
 ---
 
-## Sector Overview & Market Dynamics
+## 📌 Overview
+
+This repository indexes the content and ad blocking landscape across commercial **SaaS platforms**, **cloud encrypted DNS resolvers**, and community-driven **open-source projects**. These tools empower individuals, homelabs, and enterprises to block intrusive advertisements, stop telemetry trackers, prevent phishing/malware domains, and bypass aggressive anti-adblock mechanisms.
+
+Whether you are configuring network-wide protection via DNS sinkholes ([Pi-hole](https://github.com/pi-hole/pi-hole), [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome)) or page-level cosmetic filtering via browser extensions ([uBlock Origin](https://github.com/gorhill/uBlock)), this guide tracks key architectural trade-offs, pricing models, company valuations, and repository adoption metrics.
+
+---
+
+## 📑 Table of Contents
+
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Hosted Ad Blocking Platforms](#️-saas--hosted-ad-blocking-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [⚖️ Architectural Comparison: DNS Sinkholing vs. Browser Extension Filtering](#️-architectural-comparison-dns-sinkholing-vs-browser-extension-filtering)
+- [⭐ Star History](#-star-history)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer & Regulatory Notes](#️-disclaimer--regulatory-notes)
+
+---
+
+## 📊 Sector Overview & Market Dynamics
 
 The global ad blocking software market is estimated at **$3.5B – $4.3B** (projected to reach **$7.5B – $11.5B** by the early 2030s at a **CAGR of ~11.5%**), driven by increasing user privacy regulations (GDPR, CCPA), surging mobile and smart TV ad density, and browser-engine shifts such as Chromium's Manifest V3. The sector remains **highly fragmented** across direct-to-consumer mobile utilities, cloud encrypted DNS resolvers (DoH/DoT/DoQ), corporate network firewalls, and deeply entrenched open-source filter engines, where no single vendor holds a monopoly or "winner-take-all" advantage due to strong user commitment to open community filter rulesets (e.g., EasyList, StevenBlack, Hagezi).
 
 ---
 
-## SaaS & Hosted Ad Blocking Platforms
+## ☁️ SaaS & Hosted Ad Blocking Platforms
 
 Below is a comparison of commercial and hosted ad-blocking, privacy DNS, and system-wide content filtering solutions. Companies are sorted in descending order by **Company Scale (Valuation / Revenue)**.
 
@@ -53,7 +64,7 @@ Below is a comparison of commercial and hosted ad-blocking, privacy DNS, and sys
 
 ---
 
-## Open-Source GitHub Projects
+## 💻 Open-Source GitHub Projects
 
 Curated open-source DNS sinkholes, filtering proxies, and browser extensions. Repositories are sorted in descending order by **GitHub Star Counts** with linked star badges.
 
@@ -81,7 +92,7 @@ Curated open-source DNS sinkholes, filtering proxies, and browser extensions. Re
 
 ---
 
-## Architectural Comparison: DNS Sinkholing vs. Browser Extension Filtering
+## ⚖️ Architectural Comparison: DNS Sinkholing vs. Browser Extension Filtering
 
 | Capability / Threat Vector | DNS Sinkhole (Pi-hole, AdGuard Home, NextDNS) | Browser Content Blocker (uBlock Origin, Brave) |
 | :--- | :--- | :--- |
@@ -92,23 +103,41 @@ Curated open-source DNS sinkholes, filtering proxies, and browser extensions. Re
 | **Streaming / In-App Video Ads (YouTube/Twitch)** | ❌ Fails when ads and content originate from the same CDN domain | ✅ Injects player scriptlets and intercepts streaming manifest payloads |
 | **Manifest V3 Resistance** | ✅ 100% immune to browser engine API changes | ⚠️ Chromium restricts dynamic declarativeNetRequest rules; Firefox maintains MV2 |
 
-> **Recommended Strategy**: Combine an upstream **DNS Sinkhole** (e.g. AdGuard Home or NextDNS) for baseline network-wide telemetry blocking with **uBlock Origin on Firefox** for in-depth cosmetic element hiding and anti-circumvention protection.
+> 💡 **Recommended Strategy**: Combine an upstream **DNS Sinkhole** (e.g., [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) or [NextDNS](https://nextdns.io/)) for baseline network-wide telemetry blocking with **[uBlock Origin](https://github.com/gorhill/uBlock) on Firefox** for in-depth cosmetic element hiding and anti-circumvention protection.
 
 ---
 
-## How to Contribute
+## 🤝 How to Contribute
 
 We welcome additions and updates from developers, homelab maintainers, and privacy advocates:
 
-1. **Fork the repository** to your personal GitHub account.
-2. Ensure your proposed project or platform fits Content/Ad Blocking, DNS filtering, or Anti-Tracking.
-3. Follow the established markdown table format with accurate pricing, free tier limits, company revenue/valuation details, and linked GitHub star badges.
-4. Test markdown formatting and submit a clear Pull Request.
+1. 🍴 **Fork the repository** to your personal GitHub account.
+2. 🔍 Ensure your proposed project or platform fits Content/Ad Blocking, DNS filtering, or Anti-Tracking.
+3. 📝 Follow the established markdown table format with accurate pricing, free tier limits, company revenue/valuation details, and linked GitHub star badges.
+4. 🚀 Test markdown formatting and submit a clear Pull Request.
 
 ---
 
-## Disclaimer & Regulatory Notes
+## ⭐ Star History
 
-- This repository is a community-maintained index for privacy research and educational purposes.
-- Content blocking tools should be configured responsibly in compliance with local laws and target service agreements.
-- While commercial ad tech continues to adapt through server-side ad insertion (SSAI) and browser Manifest V3 constraints, open-source filter lists and independent resolvers remain resilient, transparent alternatives to data-harvesting networks.
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Content-Ad-Blocking&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Content-Ad-Blocking&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you for visiting and using **Awesome-Content-Ad-Blocking**! 🎉 
+
+If this curated repository helped you find the right ad blocker, secure your homelab DNS, or enhance your online privacy:
+- ⭐ **Star this repository** to help others discover it!
+- 🍴 **Fork and contribute** new open-source tools and filter lists.
+- 📢 **Share this project** with friends, colleagues, and homelab communities.
+- ☕ **Buy me a coffee**: Support ongoing curation and maintenance via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## ⚠️ Disclaimer & Regulatory Notes
+
+- ⚖️ This repository is a community-maintained index for privacy research and educational purposes.
+- 📜 Content blocking tools should be configured responsibly in compliance with local laws and target service agreements.
+- 🛡️ While commercial ad tech continues to adapt through server-side ad insertion (SSAI) and browser Manifest V3 constraints, open-source filter lists and independent resolvers remain resilient, transparent alternatives to data-harvesting networks.
