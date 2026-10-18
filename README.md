@@ -141,3 +141,5 @@ If this curated repository helped you find the right ad blocker, secure your hom
 - ⚖️ This repository is a community-maintained index for privacy research and educational purposes.
 - 📜 Content blocking tools should be configured responsibly in compliance with local laws and target service agreements.
 - 🛡️ While commercial ad tech continues to adapt through server-side ad insertion (SSAI) and browser Manifest V3 constraints, open-source filter lists and independent resolvers remain resilient, transparent alternatives to data-harvesting networks.
+# Awesome-Content-Ad-Blocking
+
